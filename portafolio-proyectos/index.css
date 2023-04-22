@@ -1,0 +1,412 @@
+:root{
+  --colorhover: green;
+  --colorleguaje:blue;
+  --colorblanco:white;
+  --colornegro:black;
+  --coloramarillo:yellow;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+padding: 26px;
+background:rgb(2, 2, 26);
+gap: 100px;
+}
+.presentacion {
+  display: flex;
+  height: 40vh;
+  justify-content: space-between;
+ flex-wrap: wrap;
+ background-image: linear-gradient(to left, rgb(244, 14, 148) ,black ,blue);
+ }
+ .saludo {
+   font-size: 35px;
+   max-width: 90%;
+   padding: 20px;
+ }
+img{
+  width: 220px;
+  height: 30vh;
+  border-radius: 5px;
+  margin: 30px 20px 20px 20px;
+}
+h1{
+  text-align: center;
+  width: 100%;
+  height: 6vh;
+  padding: 6px;
+  background: var(--colornegro);
+  color: var(--colorblanco);
+}
+h3{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+
+}
+.lenguajecard3 {
+  max-width: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px;
+
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+text-shadow:2px 6px 7px rgb(240, 234, 240);
+background-image: linear-gradient(to left,blue,red ,rgb(11, 11, 10),green);
+-webkit-text-fill-color:transparent ;
+-webkit-background-clip: text;
+background-clip: text;
+
+}
+article{
+  background: rgb(233, 180, 7);
+  opacity: .5;
+  border-radius: 10px;
+  height: 58vh;
+  padding: 10px;
+  gap: 20px;
+}
+article:hover{
+  box-shadow: 2px 1px 2px 2px var(--colorblanco);
+}
+button{
+
+ width: 100%;
+ height: 5vh;
+ padding: 10px;
+ border-radius: 10px;
+ box-shadow: 1px 10px 10px 2px var(--colornegro);
+}
+button:hover{
+  box-shadow: none;
+  background:  lime ;
+}
+
+nav{
+  background: var(--coloramarillo);
+  padding: 6px;
+}
+
+a {
+    text-decoration: none;    
+}
+li {
+  display: inline;
+  font-size: 20px;
+  margin: 60px;
+  padding: 20px;
+}
+.info{
+  background-image: linear-gradient(to right , red, green ,red, blue);
+  -webkit-background-clip:text ;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.leermas {
+  display: none;
+}
+.leermas{
+  background-image: linear-gradient(to right ,  red, black,green , blue,red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#btnmas {
+  width: 200px;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 5px 4px 10px   rgb(64, 230, 13);
+  border: none;
+}
+
+.encabezador {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+}
+
+address {
+  color: white;
+  font-size: 20px;
+}
+.Quiensoy,.habilidades{
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  }
+  section{
+    display: flex;
+    background-image: linear-gradient(to left, rgb(244, 14, 148) ,black ,blue);
+  }
+.texto{
+  color: var(--colorblanco);
+
+}
+  section button{
+    width: 50%;
+    height: 10vh;
+  }
+
+  .repuetaquiensoy{
+  animation-duration: 20s;
+  animation-name: soy;
+  animation-iteration-count: 1;
+  font-size: 15px;
+  width: 50%;
+  
+  }
+  @keyframes soy{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 9;
+  }
+  }
+  .mensajetexto  {
+    width: 100%;
+
+    }
+    input{
+      width: 150px;
+      height: 36px;
+        background: transparent;
+        border-radius: 8px;
+        border: 2px solid  rgb(64, 230, 13);
+        box-shadow:2px 6px 7px rgb(236, 8, 236);
+        background-image: url("imagenes/letra .PNG");
+        background-size: cover;
+        color: blue;
+      font-size: 20px;
+      padding: 10px;
+      margin-left: 20px;
+      
+      }
+      h4{
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+      }
+   aside{
+      font-size: 10px;
+      position: fixed;
+      top: 0;
+      left: 6px;
+    }
+
+.textoinformacion figcaption{
+  text-align: center;
+  background-image: linear-gradient(to right ,  rgb(224, 221, 221), rgb(4, 229, 240),green , blue,rgb(64, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 20px;
+  font-weight: bold;
+  
+   }
+  .textoinformacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+  }
+  .textoinformacion img{
+    width: 140%;
+    height: 25vh;
+    border-radius: 10px;
+   gap: 20px;
+   }
+  
+  .loginlenguaje img{
+    box-shadow:2px 2px 0px 2px var(--colorleguaje);
+  }
+a{
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+}
+.burbuja{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.burbujas{
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(79, 236, 7);
+  animation: burbuja linear 4s 4;
+
+}
+@keyframes burbuja{
+0%{opacity:.0; bottom: 0;}
+50%{opacity: .4;}
+100%{opacity:.0; bottom: 100vh;}
+
+}
+.burbujas:nth-child(1){
+  width: 60px;
+  height: 50px;
+  left: 100px;
+  background-image:url("imagenes/africa.PNG");
+  background-size: cover;
+animation-duration: 1s;
+
+}
+.burbujas:nth-child(2){
+  width: 60px;
+  height: 50px;
+  left: 200px;
+  animation-duration: 2s;
+  background-image:url("imagenes/alemania.PNG");
+  background-size: cover;
+}
+.burbujas:nth-child(3){
+  width: 60px;
+  height: 50px;
+  left: 300px;
+  animation-duration: 1s;
+  background-image:url("imagenes/argentina.PNG");
+  background-size: cover;
+}
+.burbujas:nth-child(4){
+  width: 60px;
+  height: 50px;
+  left: 400px;
+  animation-duration: 1.6s;
+    background-size: cover;
+    background-image:url("imagenes/brazil.PNG");
+}
+.burbujas:nth-child(5){
+  width: 60px;
+  height: 50px;
+  left: 500px;
+  animation-duration: 1.8s;
+  background-image:url("imagenes/españa.PNG");
+  background-size: cover;
+}
+.burbujas:nth-child(6){
+  width: 60px;
+  height: 50px;
+  left: 600px;
+  animation-duration: 2s;
+  background-image:url("imagenes/colombia.PNG");
+  background-size: cover;
+}
+.burbujas:nth-child(7){
+  width: 60px;
+  height: 50px;
+  left: 700px;
+  animation-duration: 1.2s;
+  background-image:url("imagenes/cuba.PNG");
+  background-size: cover;
+}
+.loginlenguaje{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  }
+  .loginlenguaje figure{
+  
+  animation: len 5s linear 3;
+  }
+  @keyframes len{
+    from{
+  
+      transform: rotateY(0deg);
+    }to{
+      
+      transform: rotateY(60deg);
+      transform: scale(0.1);
+    }
+    
+  }
+  
+.html {
+  max-width: 70px;
+  font-size: 20px;
+  animation-duration: 4s;
+  animation-name: htm;
+  animation-iteration-count: infinite;
+}
+@keyframes htm{
+  from{
+    opacity: .6;
+    
+  }to{
+    background:red;
+  }
+}
+.css {
+  max-width: 70px;
+  font-size: 20px;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+@keyframes cs{
+  from{
+    opacity: .6;
+    
+  }to{
+    background: rgb(39, 10, 230);
+  }
+}
+
+.js {
+  max-width: 70px;
+  font-size: 20px;
+  animation-duration: 10s;
+  animation-name: j;
+  animation-iteration-count: infinite;
+}
+@keyframes j{
+  from{
+    opacity: .6;
+    
+  }to{
+    background: rgb(73, 248, 10);
+  }
+}
+.js:hover {
+  background: rgb(197, 239, 8);
+}
+.html:hover {
+  background: rgb(255, 0, 0);
+}
+  footer {
+  width: 100%;
+  background: black;
+
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+
+ }
+@media screen and (max-width: 1024px) {
+ 
+  
+}
